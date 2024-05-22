@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debugger</title>
+</head>
+
+<body>
+  <script>
+    // atur breakpoint di browser,dan next-next lagi
+    function createFullName(firstName, middleName, lastName) {
+      // debugger; // AKAN STOP
+      const fullName = `${firstName} ${lastName} ${middleName} `;
+      return fullName;
+    }
+
+    const name = createFullName("andi", "matu", "lada");
+    console.info(name);
+
+    function sum(...numbers) {
+      debugger;
+      let total = 0
+      for (const number of numbers) {
+        total += number
+      }
+      return total
+    }
+
+    console.log(sum(1, 2, 2, 3));
+  </script>
+</body>
+
+</html>
