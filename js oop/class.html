@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+
+<body>
+    <script>
+        // Menggunakan prototype untuk menambahkan metode dan properti dalam JavaScript sangat menguntungkan untuk:
+        // Penghematan Memori: Menghindari duplikasi metode / properti di setiap instance.
+        // Peningkatan Performa: Membuat proses instansiasi lebih cepat dan akses metode lebih efisien.
+        // Pemeliharaan Kode yang Lebih Mudah: Memungkinkan perubahan metode / properti yang mudah dan efisien yang berlaku untuk semua instance.
+
+        // sebenarnya masih penerapannya sama dgn prototype,
+        // dan dibelakang OOP javascript itu sebenarnya konsepnya tetap prototype
+
+        class Person {
+
+        }
+
+        // jadi saat membuat class dia jg tetap mempunyai prototype
+        // add sayHello melalui prototype
+        Person.prototype.sayHello = function () {
+
+        }
+
+        const andi = new Person();
+        console.log(andi);
+
+    </script>
+</body>
+
+</html>

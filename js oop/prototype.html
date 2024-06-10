@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+</head>
+
+<body>
+    <script>
+        // proto itu mengacu ke prototype
+        // yg dimana proto memiliki prototype yg mengacu ke prototype lainnya ..n smpai ke prototype object Object.prototype
+        function Person(firstName, lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+
+            this.sayHello = function (name) {
+                console.log(`Hello ${name}, my name is ${this.firstName}`);
+            }
+        }
+
+        const andi = new Person('andi', 'matulada');
+        // add function sayBye langsung di object Nya, dia hanya akan ada di object andi, sedangkan di lia tidak ada sayBye(), 
+        // kecuali jika add di dlm { } constructor method / class makan turunan dari class tersebut otomatis ada sayBye 
+        andi.sayBye = function () {
+            console.log('good bye');
+        }
+
+        const lia = new Person('nur', 'awalia');
+        // RECOMMENDED, jika add di property
+        // add property ke prototype, yg akan membuat semua yg menjadi turunan nya memiliki semua itu yakni method,property dll,
+
+        // saat menambah ke dlm prototype sebenarnya hanya menambah di prototype bukan nambah ke instance object
+
+        // prototype inheritance saat mengecek, yg paling pertama akan diambil 
+
+        // namaConstructorFunction.prototype.propertyYgInginDiAdd
+        Person.prototype.sayBye2 = function () {
+            console.log('Good Bye 2 @');
+        }
+
+        Person.prototype.run = function () {
+            console.log(`${this.firstName} is running`);
+        }
+        console.log(andi);
+        console.log(lia);
+
+        andi.sayBye2()
+        andi.run()
+    </script>
+</body>
+
+</html>

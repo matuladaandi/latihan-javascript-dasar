@@ -1,0 +1,13 @@
+{
+    "firstName": "andi",
+    "lastName": "matulada",
+    "address": {
+        "country": "Indonesia",
+        "city": "Dompu"
+    },
+    "hobbies": [
+        "coding",
+        "game",
+        "sport"
+    ]
+}
