@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alias Name</title>
+</head>
+
+<body>
+
+    <!-- ! SAAT MENGGUNAKAN ALIAS,
+    BEST PRAKTIS NYA GUNAKAN SAAT IMPORT -->
+
+    <!-- karna sudah menggunakan nama alias,jadi saat memanggil Nya harus menggunakan nama alias nya misal dari sum menjadi total. -->
+
+    <script type="module">
+
+        import { company as perusahaan, sum as total, Company as Perusahaan } from "./scripts/alias-name.js"
+
+        console.log(perusahaan);
+        console.log(total(2, 4));
+
+    </script>
+</body>
+
+</html>

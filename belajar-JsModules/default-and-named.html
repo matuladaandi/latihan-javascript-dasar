@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default And Named</title>
+
+    <!-- ! REKOMED JANGAN DIGABUNGKAN DALAM 1 MODULE ANTARA DEFAULT DENGAN NAMED -->
+
+    <!-- di Rekomendensikan Menggunakan Named -->
+    
+</head>
+
+<body>
+    <script type="module">
+
+        /**
+         *  Menggabungkan import DEFAULT & NAMED, Aturan Nya Dahulukan DEFAULT lalu NAMED
+         * */
+
+        // authorName adalah default(boleh memberikan nama apa saja)
+        // import authorName, { title, content } from "./scripts/default-and-named.js"
+
+        // boleh seperti ini juga
+        import { default as authorName, title, content } from "./scripts/default-and-named.js"
+
+        console.log(title);
+        console.log(content);
+
+        console.log(authorName); 
+          
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module Object</title>
+</head>
+
+<body>
+    <script type="module">
+
+        // Import all from module, * artinya semua
+        //  AllAndi menjadi module object
+        import * as AllAndi from "./scripts/module-object.js"
+
+        console.log(AllAndi.firstName);
+        console.log(AllAndi.middleName);
+        console.log(AllAndi.lastName);
+
+        AllAndi.hello()
+        
+        const person = new AllAndi.Person();
+
+    </script>
+</body>
+
+</html>

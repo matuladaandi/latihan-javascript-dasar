@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Function</title>
+</head>
+
+<body>
+    <script type="module">
+
+        // nama nya sayHelloDefault boleh apa saja, saat dipanggil seakan2 memanggil function yg ada di module say-hello-default.js
+
+        // seakan2 seperti ini { default as sayHelloDefault} 
+        // jadi boleh memberi nama apa saja di alias Nya atau as
+
+        import sayHelloDefault from "./scripts/say-hello-default.js"
+
+        console.log(sayHelloDefault("andi"));
+
+    </script>
+</body>
+
+</html> 
