@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style</title>
+</head>
+
+<body>
+
+    <input type="button" value="red">
+    <input type="button" value="green">
+    <input type="button" value="blue">
+    <div id="canvas" style="width: 200px;height: 200px;background-color: black;"></div>
+
+    <script>
+
+        // ambil canvas atau kotak
+        const canvas = document.getElementById('canvas');
+
+        // select semua input 
+        const buttons = document.querySelectorAll('input');
+
+        // iterasi semua input dgn type button
+        for (let button of buttons) {
+
+            // ketika input type button di click
+            button.onclick = function () {
+
+                // ganti style background id canvas,sesuai dgn value( kotak red,gree,blue) button yg di click
+                canvas.style.backgroundColor = button.getAttribute('value');
+            }
+        }
+
+    </script>
+</body>
+
+</html>

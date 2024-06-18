@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Method</title>
+</head>
+
+<body>
+
+    <!-- Element merupakan turunan dari Node jadi semua propety,method yg
+        dimiliki Node, otomatis dimiliki jg oleh Element
+    -->
+
+    <div class="content" id="content">
+        <h1 class="title" id="title">This is title</h1>
+        <p class="description" id="description">This is Description</p>
+        <h3 id="testing">testing</h3>
+    </div>
+
+    <script>
+
+        const content = document.getElementById('content');
+
+        console.log(content.className);
+        console.log(content.id);
+        console.log(content.tagName);
+        // console.log(content.children);
+
+        // testing sudah dihapus
+        const testing = document.getElementById('testing').remove();
+
+        const title = document.getElementById('title');
+
+        // title sudah dihapus
+        title.remove();
+
+        console.log(content);
+
+    </script>
+</body>
+
+</html>

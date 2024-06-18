@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node List Static</title>
+</head>
+
+<body>
+
+    <!--  node static perubahan yg terjadi di element nya , dia TIDAK akan berubah juga -->
+
+    <ul id="menu1">
+        <li id="first">first</li>
+        <li id="second">second</li>
+        <li id="third">third</li>
+    </ul>
+
+    <ul id="menu2">
+        <li>andi</li>
+        <li>lia</li>
+        <li>matulada</li>
+    </ul>
+
+    <script>
+
+        let list = document.querySelectorAll('li');
+
+        const menu1 = document.getElementById('menu1');
+        menu1.appendChild(document.createElement('li'))
+        menu1.appendChild(document.createElement('li'))
+
+        console.log(list);
+
+        // query ulang kalau mau ada perubahan
+        list = document.querySelectorAll('li');
+        console.log(list);
+
+    </script>
+</body>
+
+</html>

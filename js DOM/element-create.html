@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element</title>
+</head>
+
+<body>
+
+    <div class="content" id="content">
+        <!-- add h1 from const title -->
+    </div>
+
+    <script>
+
+        const content = document.getElementById('content');
+
+        // create h1
+        const title = document.createElement('h1');
+        title.textContent = 'Learning JavaScript DOM';
+        content.appendChild(title);
+
+        // create description
+        const description = document.createElement('p');
+        description.textContent = 'Welcome to my course';
+        content.appendChild(description);
+
+    </script>
+</body>
+
+</html>

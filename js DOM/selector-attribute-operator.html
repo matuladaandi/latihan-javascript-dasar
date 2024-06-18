@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Attribute</title>
+</head>
+
+<body>
+
+    <div class="andi">Andi</div>
+    <div class="andizandi">Andiz</div>
+    <div class="andilia">Lia</div>
+    <div class="andimatulada">Matulada</div>
+
+    <script>
+
+        // kalau [class^=andi] maka hanya 3 yg muncul jika ingin console log
+        //  const list = document.querySelectorAll('div[class^=andi]');
+
+        const list = document.querySelectorAll('div[class^=andi]');
+        console.log(list);
+
+        // kalau [class=andi] saja maka hanya 1 yg muncul jika ingin console log
+        // const list = document.querySelectorAll('div[class=andi]');
+    </script>
+</body>
+
+</html>

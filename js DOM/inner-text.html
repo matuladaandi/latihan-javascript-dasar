@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner Text</title>
+</head>
+
+<body>
+
+    <!-- textContent dan innerText hanya mengambil text -->
+    <p id="content">
+        <script>
+            console.log('Hello Word');
+        </script>
+        <b>Muh </b>Andi <i> Matulada</i>
+    </p>
+
+    <script>
+
+        const content = document.getElementById('content');
+        // textContent akan mengambil semua yg ada di elenent termasuk script,text jg
+        console.log(content.textContent);
+
+        // innerText sedikit lebih pintar dr textContent, dia tdk akan mengambil script krn tdk akan di tampilkan di pd HTML nya.
+        // dan juga akan merender text biasa
+        console.log(content.innerText);
+
+        // innerHTML itu semuanya di ambil tag html nya dll
+        console.log(content.innerHTML);
+
+    </script>
+</body>
+
+</html>

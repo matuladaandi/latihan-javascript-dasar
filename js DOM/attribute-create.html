@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Create</title>
+</head>
+
+<body>
+
+    <!-- attribute itu sederhana,dia cuman isinya name sama value -->
+    <!-- attribute dianggap jg sbg node kalau di DOM -->
+
+    <img id="logo" alt="logo PZN">
+
+    <script>
+
+        const logo = document.getElementById('logo');
+        const src = document.createAttribute('src')
+
+        // cara 1 long
+
+        // src.value = "https://www.programmerzamannow.com/img/pzn.png"
+
+        // add src on id logo
+        // logo.setAttributeNode(src)
+
+
+        // cara 2 short
+        // setAttribute("name-attribute","value")
+
+        logo.setAttribute('src', "https://www.programmerzamannow.com/img/pzn.png")
+
+    </script>
+</body>
+
+</html>

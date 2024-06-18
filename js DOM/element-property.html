@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Property</title>
+</head>
+
+<body>
+
+    <!-- Element merupakan turunan dari Node jadi semua propety,method yg
+        dimiliki Node, otomatis dimiliki jg oleh Element
+    -->
+
+    <div class="content" id="content">
+        <h1 class="title" id="title">This is title</h1>
+        <p class="description" id="description">This is Description</p>
+    </div>
+
+    <script>
+
+        const content = document.getElementById('content');
+
+        console.log(content.className);
+        console.log(content.id);
+        console.log(content.tagName);
+
+    </script>
+</body>
+
+</html>

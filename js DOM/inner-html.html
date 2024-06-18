@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner Text</title>
+</head>
+
+<body>
+
+    <!-- textContent dan innerText hanya mengambil text -->
+    <p id="content">
+       
+    </p>
+
+    <script>
+
+        const content = document.getElementById('content');
+        
+        // di bungkus menggunaakan string atau ``
+        content.innerHTML = "<h1>This is Title</h1> <p>this paragraph</p>"
+
+    </script>
+</body>
+
+</html>

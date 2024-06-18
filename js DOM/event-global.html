@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Global</title>
+</head>
+
+<body>
+
+    <!-- addEventListener dpt menambahkan  beberapa kali event handler atau callback -->
+    <!-- tapi kalau global event handler hanya 1x -->
+
+    <input id="clickMe" type="button" value="click me!">
+
+    <script>
+
+        const button = document.getElementById('clickMe');
+
+        button.onclick = function () {
+            button.setAttribute("value", "Are you ready click me!")
+
+            // bisa dgn cara ini
+            // console.log('button di click');
+        }
+
+        // ketika ada 2 event Global maka akan di timpa
+
+        // di comment agar tidak menimpa
+        // button.onclick = function () {
+        //     console.log('button di click');
+        // }
+
+    </script>
+</body>
+
+</html>

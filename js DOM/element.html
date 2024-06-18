@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element</title>
+</head>
+
+<body>
+
+    <!-- Element merupakan turunan dari Node jadi semua propety,method yg
+        dimiliki Node, otomatis dimiliki jg oleh Element
+    -->
+
+    <h1 id="title"></h1>
+    <p id="description"></p>
+    <script>
+
+        const title = document.getElementById('title');
+        const description = document.getElementById('description');
+
+        title.textContent = "Belajar DOM JS"
+        description.textContent = "Welcome my brother"
+
+    </script>
+</body>
+
+</html>

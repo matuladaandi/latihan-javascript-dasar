@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Method</title>
+</head>
+
+<body>
+
+    <!-- di setelah enter ada node kosong yg terhitung seperti di bawah ini-->
+    <ul id="menu">
+        <li id="first">first</li>
+        <li id="second">second</li>
+        <li id="third">third</li>
+    </ul>
+
+    <script>
+
+        const menu = document.getElementById('menu');
+
+        // id second sudah dihapus
+        menu.removeChild(document.getElementById('second'));
+
+        console.log(menu);
+
+
+    </script>
+</body>
+
+</html>

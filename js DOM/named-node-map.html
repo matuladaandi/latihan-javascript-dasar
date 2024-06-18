@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Named Node Map</title>
+</head>
+
+<body>
+
+<!-- Named Node Map itu adalah kumpulan dari attribute -->
+
+    <img id="logo" src="https://www.programmerzamannow.com/img/pzn.png" alt="logo PZN">
+
+    <script>
+
+        const logo = document.getElementById('logo');
+
+        // mengambil attributes yg ada di id logo
+        const attributes = logo.attributes;
+
+        // mengambil attributes id
+        // attributes.getNamedItem('id')
+
+        // Loop attribute
+        for (let attribute of attributes) {
+            console.log(`${attribute.name} : ${attribute.value}`);
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node List Live</title>
+</head>
+
+<body>
+
+    <!-- live node perubahan yg terjadi di element nya , dia akan berubah juga -->
+
+    <ul id="menu1">
+        <li id="first">first</li>
+        <li id="second">second</li>
+        <li id="third">third</li>
+    </ul>
+
+    <ul id="menu2">
+        <li>andi</li>
+        <li>lia</li>
+        <li>matulada</li>
+    </ul>
+
+    <script>
+
+        // get menu 1
+        const menu1 = document.getElementById('menu1');
+        const list = menu1.childNodes
+
+        menu1.appendChild(document.createElement('li'))
+        menu1.appendChild(document.createElement('li'))
+        
+        console.log(list);
+
+    </script>
+</body>
+
+</html>

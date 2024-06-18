@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Property</title>
+</head>
+
+<body>
+
+    <!-- di setelah enter ada node kosong yg terhitung seperti di bawah ini-->
+    <ul id="menu">
+        <li id="first">first</li>
+        <li id="second">second</li>
+        <li id="third">third</li>
+    </ul>
+
+    <script>
+
+        const menu = document.getElementById('menu');
+
+        // akan menampilkan semua anak-anak nya
+        console.log(menu.childNodes);
+
+        const second = document.getElementById('second');
+
+        // untuk mendapatkan isi Nya
+        console.log(second.textContent);
+
+        // pertamanya akan text jika hanya previousSibling 1x saja
+        // console.log(second.previousSibling);
+        // expetect : #text
+
+        // dapatkan sodara sebelumnya
+        console.log(second.previousSibling.previousSibling);
+        // expect : first
+
+        // dapatkan sodara setelahnya
+        console.log(second.nextSibling.nextSibling);
+        // expect : third
+
+    </script>
+</body>
+
+</html>

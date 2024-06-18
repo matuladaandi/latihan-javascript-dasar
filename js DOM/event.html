@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+
+<body>
+
+    <h1 id="text">click yellow box</h1>
+    <div id="canvas" style="width: 500px; height: 500px; background-color: rgb(184, 184, 79);"></div>
+
+    <script>
+
+        const canvas = document.getElementById('canvas');
+        const text = document.getElementById('text');
+
+        // jika ini dptkan data detail event nya.tambahkan event di param nya dan cek docs
+
+        // param event,javascript akan mengirim event nya,dan tergantung dari datail event,misal click berarti mouse event
+        canvas.onclick = function (event) {
+            text.textContent = `your click at (${event.x}, ${event.y})`
+        }
+
+    </script>
+</body>
+
+</html>

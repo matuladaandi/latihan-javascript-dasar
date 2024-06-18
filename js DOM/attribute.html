@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute</title>
+</head>
+
+<body>
+
+    <!-- attribute itu sederhana,dia cuman isinya name sama value -->
+
+    <img id="logo" src="https://www.programmerzamannow.com/img/pzn.png" alt="logo PZN">
+
+    <script>
+
+        const logo = document.getElementById('logo');
+
+        // object getAttributeNode
+        const src = logo.getAttributeNode('src')
+
+        console.log(src.value);
+        console.log(src.name);
+
+        console.log(`
+        `);
+        
+        // get value on attribute (langsung ambil)
+        const src2 = logo.getAttribute('src');
+        console.log(src2);
+
+    </script>
+</body>
+
+</html>
